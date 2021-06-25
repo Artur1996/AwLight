@@ -452,8 +452,8 @@
   });
 
   async function loginnow() {
-    if (document.getElementById("AutoLogin").checked == true) {
-      loginzz.loginauto = true
+    if (document.getElementById("AutoLogin").checked == false) {
+      loginzz.loginauto = false
       loginzz.autologinz()
     }
   }
@@ -519,7 +519,7 @@
       document.getElementById('AutoRestartFunction').checked = false
       document.getElementById("auto-claimnfts").checked = true
       document.getElementById("auto-SwapTransfer").checked = true
-      document.getElementById("AutoLogin").checked = true
+      document.getElementById("AutoLogin").checked = false
     }
   }
 
